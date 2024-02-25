@@ -1,0 +1,186 @@
+.p-btn {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    border-radius: var(--border-radius);
+    color: var(--second-color);
+    background: white;
+    font-family: cursive;
+    cursor: pointer;
+    margin: .9rem;
+    font-size: 1.9rem;
+    font-weight: 420;
+    outline: none;
+    border: none;
+   transition: all .2s linear;
+}
+
+.p-btn:hover {
+    border-radius: var(--border-radius-hover);
+    background: var(--main-color);
+}
+
+.header-img{
+    width: 100%;
+}
+
+/*----  Main Style  cards----*/
+
+.section-prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  padding: 1.5rem 1rem;
+  margin: 6rem;
+}
+.section-prices .section-header {
+  background-color: #FFF;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #555;
+  font-weight: 700;
+  box-shadow: 0 10px 35px -10px rgba(0, 0, 0, .3);
+}
+
+.list-boxs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list-boxs .p-card {
+  width: 32%;
+  text-align: center;
+  position: relative;
+  max-width: 300px;
+  border: transparent;
+  margin-top: 4rem;
+}
+
+.list-boxs .p-card .p-head,
+.list-boxs .p-card .p-body {
+  background-color: #FFF;
+  padding: 1.5rem 1rem;
+}
+
+.list-boxs .p-card .p-head {
+  color: var(--second-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transform: translateY(30px);
+  transition: transform .3s linear;
+  border-bottom: 1px solid #F2F2F2;
+}
+.list-boxs .p-card:hover .p-head {
+  transform: translateY(0);
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, .1);
+}
+
+.list-boxs .p-card .ticket {
+  color: #FFF;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.3rem ;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  height: 5rem;
+  box-shadow: inset 0px 6px 6px -5px rgba(0, 0, 0, .25),
+              inset 0px -6px 6px -5px rgba(0, 0, 0, .25);
+}
+.list-boxs .starter .ticket {
+  background-color: rgba(145, 118, 84, 0.801);
+}
+
+.list-boxs .p-card .p-body {
+  transform: translateY(-30px);
+  transition: transform .3s linear;
+}
+.list-boxs .p-card:hover .p-body {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.list-boxs .p-card img{
+   width: 100%;
+}
+.list-boxs .p-card .p-btn {
+  margin-top: 2rem;
+  padding: .6rem 1rem;
+  outline: none;
+  font-weight: 500;
+  min-width: 160px;
+  color: #333;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+.list-boxs .p-card .p-btn:hover {
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .15);
+  transition: all .2s linear;
+}
+
+.list-boxs .starter .p-btn {
+  background: var(--second-color);
+  color: var(--white-color);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  transition: all .2s linear;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1640px) {
+    .list-boxs {
+      justify-content: space-around;
+    }
+    .list-boxs .p-card {
+      max-width: 400px;
+    }
+  }
+
+  @media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+}
+
+
+@media screen and (max-width: 750px) {
+  .list-boxs {
+    justify-content: space-around;
+  }
+  .list-boxs .p-card {
+    width: 45%;
+  }
+
+
+}
+
+@media screen and (max-width: 550px) {
+
+  .list-boxs .p-card {
+    width: 95%;
+  }
+
+  .section-prices {
+    margin: 3rem;
+  }
+
+}
+

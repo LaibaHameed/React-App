@@ -1,0 +1,292 @@
+/* second section style  */
+
+.book-table {
+    background-color: rgba(234, 231, 222, 0.884);
+    border: var(--border);
+    /* border-radius:94% 1% 97% 2% / 2% 94% 3% 95%; */
+    /* margin: 1rem 1rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.8rem;
+}
+
+.book-table:hover {
+    border: var(--border-hover);
+    transition: all .1s linear;
+}
+
+.book-table>h3 {
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    font-family: 'Caveat';
+    font-weight: 700;
+    display: inline-block;
+    margin: 1.5rem 0;
+    color: rgb(145, 118, 84);
+    /* color: rgba(199, 161, 122, 1); */
+}
+
+
+.book-table>h1 {
+    font-size: 3.6rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.book-table > form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem 0rem;
+}
+
+.book-table > form > select{
+    border: none;
+    outline: none;
+    background:#FFFFFFff;
+    font-size: 1.6rem;
+    font-family: cursive;
+    padding: 1.2rem 7.5rem 1.2rem 1.4rem;
+    margin: 2rem 2rem;
+}
+
+.book-table > form > .date{
+    border: none;
+    outline: none;
+    background:#FFFFFFff;
+    font-size: 1.6rem;
+    font-family: cursive;
+    padding: 1.2rem 2rem 1.2rem 2rem;
+    margin: 2rem 2rem;
+}
+
+.book-table > form > .time{
+    border: none;
+    outline: none;
+    background:#FFFFFFff;
+    font-size: 1.6rem;
+    font-family: cursive;
+    padding: 1.2rem 4rem 1.2rem 4rem;
+    margin: 2rem 2rem;
+}
+
+
+.book-table > form > .button{
+    border: none;
+    outline: none;
+    background:rgb(145, 118, 84);
+    color: #FFFFFFff;
+    font-size: 1.6rem;
+    font-family: cursive;
+    padding: 1.2rem 4.4rem 1.2rem 4.4rem;
+    margin: 2rem 2rem;
+}
+
+.book-table > form > .button:hover{
+    background: var(--main-color);
+}
+
+.book-table > form > span{
+    font-size: 1.9rem;
+    color: var(--main-color);
+    font-family: fantasy;
+    text-transform: uppercase;
+}
+
+.book-table > .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.book-table > .cards > .card{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+}
+
+.book-table > .cards > .card > .imgBox > img{
+    width: 33rem;
+}
+/* .book-table > .cards > .card > .textBox{
+    width: 33rem;
+} */
+
+.book-table > .cards > .card > .textBox > h1 {
+    font-size: 2.4rem;
+    color: var(--main-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards > .card >  .textBox > h1 > span{
+    font-family: 'Merriweather';
+    color: var(--second-color);
+    padding-right:1.5rem ;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.book-table > .cards > .card > .textBox > p{
+    font-size: 1.45rem;
+    color: rgb(119, 115, 115);
+    padding: 1.4rem;
+    line-height: 2.4rem;
+    text-align: justify;
+    text-transform:none;
+}
+
+.book-table > .cards > .card > .textBox > button{
+    outline: none;
+    border: none;
+    background: transparent;
+    color: var(--second-color);
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.cards > .card > .textBox > button > span{
+    font-size: 1.4em;
+    padding-left: .4rem;
+    font-weight: 600;
+}
+
+.cards > .card > .textBox > button:hover > span{
+    padding-left: 1rem;
+    transition: all .1s ease;
+}
+
+input[button]{
+    outline: none;
+}
+
+
+
+/* .book-table > .cards {
+    flex-direction: row; 
+    align-items: center;
+  }
+
+  .book-table > .cards > .card {
+    flex: 0 0 calc(100% - 2rem); 
+    margin: 1rem 0; 
+  }
+
+  .book-table > .cards > .card > .textBox {
+    width: 100%; 
+  } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media(min-width:1270px) {
+    .book-table>.cards>.card {
+        margin: 0rem 3rem;
+        }
+}
+
+@media(max-width:1270px) {
+
+    .book-table>.cards {
+        flex-wrap: nowrap;
+        gap: 1.5rem;
+    }
+
+    .book-table>.cards>.card {
+    margin: 0rem 1.2rem;
+    }
+
+
+}
+
+@media(max-width:1120px) {
+    .book-table > .cards > .card >.imgBox >  img{
+        width: 28rem;
+    }
+}
+
+@media(max-width:1080px) {
+
+    .book-table>.cards {
+        flex-wrap: nowrap;
+    }
+
+    .book-table > .cards > .card > .textBox > p{
+        font-size: 1.4rem;
+        padding: 0.5rem;
+        line-height: 1.9rem;
+    }
+
+    /* .book-table > .cards > .card >.imgBox > img{
+        width: 25rem;
+    } */
+
+}
+
+@media(max-width:940px) {
+    .book-table > .cards > .card >.imgBox > img{
+        width: 25rem;
+    }
+}
+
+
+@media(max-width:800px) {
+
+    .book-table>.cards {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .book-table>.cards>.card {
+        width: 100%;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .book-table > .cards > .card > .textBox > p{
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        line-height: 2rem;
+    }
+
+    .book-table>form {
+        flex-direction: column;
+    }
+
+    .book-table>form>.date {
+        padding: 1.2rem 2rem 1.2rem 2rem;
+    }
+
+    .book-table>form>.time {
+        padding: 1.2rem 4rem 1.2rem 4rem;
+    }
+
+}
+
+@media(max-width:600px) {
+    .book-table>.cards>.card {
+        flex-wrap: wrap;
+    }
+}

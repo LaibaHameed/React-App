@@ -4,6 +4,10 @@ import coffeeImage from '../../assets/imgs/home-img-1.png';
 import coffeeImage1 from '../../assets/imgs/home-img-1.png';
 import coffeeImage2 from '../../assets/imgs/home-img-2.png';
 import coffeeImage3 from '../../assets/imgs/home-img-3.png';
+import Section1 from './Section1';
+import Section2 from './Section2';
+import Section3 from './Section3';
+import Gallery from './Gallery';
 
 const Home = () => {
     return (
@@ -32,7 +36,10 @@ const Home = () => {
                 </div>
 
             </div>
-
+            <Section1/>
+            <Section2/>
+            <Section3/>
+            <Gallery/>
         </>
     )
 }

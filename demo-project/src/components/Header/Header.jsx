@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { Link } from "react-router-dom";
 import './Header.css'
 
 const Header = () => {
@@ -6,11 +7,16 @@ const Header = () => {
     
     const [isPagesOpen, setIsPagesOpen] = useState(false);
     const [isShopOpen, setIsShopOpen] = useState(false);
-    const [isClick, setIsClick] = useState(true);
+    const [isClick, setIsClick] = useState(false);
 
 const togglePages = () => {
   setIsPagesOpen(!isPagesOpen);
   setIsShopOpen(false);
+};
+
+const handleClick = (event) => {
+  event.preventDefault(); // Prevent the default behavior of the Link tag
+  togglePages(); // Call your togglePages function
 };
 
 const toggleShop = () => {
@@ -18,9 +24,16 @@ const toggleShop = () => {
     setIsPagesOpen(false);
 };
 
+const handleClick2 = (event) => {
+  event.preventDefault(); // Prevent the default behavior of the Link tag
+  toggleShop(); // Call your togglePages function
+};
+
+
 const toggleMenu = () => {
   setIsClick(!isClick);
 };
+
 
 const navbarRef = useRef(null);
 
@@ -56,25 +69,25 @@ useEffect(() => {
 
 <nav ref={navbarRef}  className={`${ isClick ? "active navbar" : "navbar"}`}>
     <ul>
-        <li><a routerLink="/home">home</a></li>
-        <li><a routerLink="/menu">Menu</a></li>
-        <li><a routerLink="/reservation">Reservation</a></li>
+        <li><a><Link to={'/'}>home</Link></a></li>
+        <li><a><Link to={'/menu'}>Menu</Link></a></li>
+        <li><a><Link to={'reservation'}>Reservation</Link></a></li>
         <li>
-            <a href="#" onClick={togglePages}>
-            pages <i className={"fa-solid fa-caret-down"}></i>
+            <a onClick={togglePages}>
+            <Link onClick={handleClick}>pages <i className={"fa-solid fa-caret-down"}></i></Link>
             </a>
             <ul style={{ display: isPagesOpen ? 'block' : 'none' }}>
-                <li><a routerLink="/gallery">Gallery</a></li>
-                <li><a routerLink="/about-us">About Us</a></li>
-                <li><a routerLink="/contact-us">Contact Us</a></li>
+                <li><a><Link to={'main-gallery'}>Gallery</Link></a></li>
+                <li><a><Link to={'about-us'}>About Us</Link></a></li>
+                <li><a><Link to={'contact-us'}>contact Us</Link></a></li>
             </ul>
         </li>
-        <li><a href="#"  onClick={toggleShop} >Shop <i className="fa-solid fa-caret-down"></i> </a>
+        <li><a onClick={toggleShop} ><Link onClick={handleClick2}>Shop <i className="fa-solid fa-caret-down"></i></Link> </a>
             <ul style={{ display: isShopOpen ? 'block' : 'none' }}>
-                <li><a routerLink="/products">Products</a></li>
-                <li><a routerLink="/cart">Cart</a></li>
-                <li><a routerLink="/check-out">Check Out</a></li>
-                <li><a routerLink="/">My Account</a></li>
+                <li><a><Link to={'products'}>Products</Link></a></li>
+                <li><a><Link to={'cart'}>Cart</Link></a></li>
+                <li><a><Link to={'check-out'}>Check Out</Link></a></li>
+                <li><a><Link to={'account'}>My Account</Link></a></li>
 
             </ul>
         </li>
@@ -83,8 +96,8 @@ useEffect(() => {
 
 <div className="icons">
     <div  id="menu-btn" onClick={toggleMenu}><i  className={`${ isClick ? "fa-solid fa-xmark" : "fas fa-bars" }`}></i></div>
-    <a routerLink="/cart" className="fas fa-shopping-cart"></a>
-    <a routerLink="/sign-up" className="btn">Join Us</a>
+    <Link to={'cart'}><a  className="fas fa-shopping-cart"></a></Link>
+    <Link><a className="btn">Join Us</a></Link>
 </div>
 
 </header>

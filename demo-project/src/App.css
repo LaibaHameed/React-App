@@ -69,3 +69,13 @@ body::-webkit-scrollbar-thumb {
     border-radius: var(--border-radius-hover);
     background: var(--main-color);
 }
+
+
+
+@media(max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+}
