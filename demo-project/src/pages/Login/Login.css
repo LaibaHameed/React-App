@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600&family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+    
+}
+
+.log-container{
+    /* margin-top: 9rem; */
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #575333,  #3C3B3F );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.login-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+}
+
+.coll-1, .coll-2{
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.coll-1 img{
+    width: 100%;
+    display: block;
+}
+
+.coll-2{
+    background: whitesmoke;
+    padding: 40px 8%;
+    color: #605C3C;
+    min-width: 250px;
+}
+
+.coll-2 h2{
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0 30px;
+}
+
+.input-field{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #605C3C;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 5px 0px 10px;
+}
+
+.login-form label{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.coll-2 .login-form input{
+      margin-bottom: 20px;
+}
+
+
+.coll-2 .login-form button{
+    font-size: 17px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid #605C3C;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 30px 0px 30px;
+    background: #605C3C;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.Login-row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Login-row .span{
+    margin-bottom: 11px ;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.Login-row .span a{
+    color: #323136;
+    cursor: pointer;
+}
+.Login-row .span a:hover{
+    font-size: 1.55rem;
+    color: #0c0c0c;
+}
+
+
+@media (max-width: 700px) {
+    .coll-1{
+        display: none;
+    }
+
+    .login-box{
+        width: 70%;
+    }
+}
+@media (max-width: 700px) {
+    .coll-1{
+        display: block;
+    }
+
+    .login-box{
+        width: 90%;
+    }
+}

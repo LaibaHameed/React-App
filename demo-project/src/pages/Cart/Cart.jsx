@@ -10,7 +10,7 @@ import item3 from "../../assets/Products/product-image-3.jpg";
 const Cart = () => {
   return (
     <>
-      <div class="heading">
+      <div class="cart-heading">
         <h3>Cart</h3>
         <p><Link to={"/"} >Coffee</Link> / <Link to={"/cart"} >Cart</Link></p>
       </div>
@@ -25,7 +25,7 @@ const Cart = () => {
 
       {/* **************** */}
 
-      <div class="parent">
+      <div class="cart-parent">
         <table cellpadding="0" cellspacing="0" >
           <thead>
             <tr>
@@ -75,12 +75,12 @@ const Cart = () => {
 
 
       <div class="coupon">
-        <form action="#">
+        <form action="#" className='cart-form'>
           <div>
             <input type="text" name="" id="" value="Coupon Code" class="input" />
-            <input type="button" value="AppLy Coupon" class=" formBtn" />
+            <input type="button" value="AppLy Coupon" class=" form-Btn" />
           </div>
-          <input type="button" value="Update Cart" class=" formBtn"></input>
+          <input type="button" value="Update Cart" class=" form-Btn"></input>
         </form>
       </div>
 

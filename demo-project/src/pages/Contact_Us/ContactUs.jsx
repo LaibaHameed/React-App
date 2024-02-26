@@ -6,7 +6,7 @@ const ContactUs = () => {
     <>
       <div class="parent">
     <div class="body">
-        <div class="container">
+        <div class="C-container">
             <div class="contact-box">
                 <div class="left"></div>
                 <div class="right">

@@ -30,9 +30,9 @@ const Home = () => {
                 </div>
 
                 <div className="img-slider">
-                    <img src={coffeeImage1} alt="" />
-                    <img src={coffeeImage2} alt="" />
+                    <img   src={coffeeImage2} alt="" />
                     <img src={coffeeImage3} alt="" />
+                    <img className='img-slide1' src={coffeeImage1} alt="" />
                 </div>
 
             </div>

@@ -20,9 +20,9 @@ const Reservation = () => {
         </small>
       </p>
 
-      <div class="parent-box">
-    <div class="child-box1">
-        <form action="#">
+      <div class="r-parent-box">
+      <div class="child-box1">
+        <form action="#" className='r-form'>
             <div class="form-div">
               <input type="text" name="" id="" placeholder="Name*" required className='input'/>
               <input type="number" name="" id="" placeholder="Phone*" required/>
@@ -35,14 +35,14 @@ const Reservation = () => {
               <input type="text" name="" id="" placeholder="Time*" required className='input'/>
               <input type="email" name="" id="" placeholder="Email*" required/>
             </div>
-            <textarea rows="10" name="" required placeholder="Notes*"></textarea>
+            <textarea rows="10" name="" required placeholder="Notes*" className='r-notes'/>
             <button>SUBMIT</button>
         </form>
-    </div>
-    <div class="child-box2">
+      </div>
+      <div class="child-box2">
         <img src={sideImg} alt=""/>
-    </div>
-</div>
+      </div>
+      </div>
     </>
   )
 }

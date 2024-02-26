@@ -111,9 +111,11 @@ const menuData2 = [
 
   return (
     <>
-      <div class="head-img">
-        <img class="header-img" src={headImg} alt="" srcset="" />
-      </div>
+<div class="head-img">
+  <img class="header-img" src={headImg} alt="" srcset="" />
+  {/* <div class="menu-text"><h1>Menu</h1></div> */}
+</div>
+
 
       <div className="menu">
             <div className="menu-section">

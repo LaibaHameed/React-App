@@ -97,7 +97,7 @@ useEffect(() => {
 <div className="icons">
     <div  id="menu-btn" onClick={toggleMenu}><i  className={`${ isClick ? "fa-solid fa-xmark" : "fas fa-bars" }`}></i></div>
     <Link to={'cart'}><a  className="fas fa-shopping-cart"></a></Link>
-    <Link><a className="btn">Join Us</a></Link>
+    <Link to={'login'}><a className="btn join-btn">Join Us</a></Link>
 </div>
 
 </header>

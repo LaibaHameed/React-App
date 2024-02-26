@@ -54,10 +54,10 @@ body::-webkit-scrollbar-thumb {
 .btn {
     display: inline-block;
     padding: .9rem 1.5rem;
-    border-radius: var(--border-radius);
+    /* border-radius: var(--border-radius); */
     color: #FFFFFFff;
     background: var(--second-color);
-    font-family: cursive;
+    /* font-family: cursive; */
     cursor: pointer;
     margin: .9rem;
     font-size: 1.9rem;
@@ -66,6 +66,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn:hover {
-    border-radius: var(--border-radius-hover);
+    /* border-radius: var(--border-radius-hover); */
     background: var(--main-color);
 }

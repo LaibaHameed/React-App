@@ -5,9 +5,9 @@ import img from "../../assets/image/About-img-1.png"
 const AboutUs = () => {
   return (
     <>
-      <div class="section">
-    <div class="container">
-        <div class="content-section">
+    <div class="a-section">
+    <div class="a-container">
+        <div class="a-content-section">
             <div>
                 <h1 class="title">About me</h1>
             </div>

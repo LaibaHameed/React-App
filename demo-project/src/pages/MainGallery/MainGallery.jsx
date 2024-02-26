@@ -62,7 +62,7 @@ const MainGallery = () => {
   ];
   return (
     <>
-      <div class="heading">
+      <div class="g-heading">
         <h3>Gallery</h3>
         <p><Link to="/home" >Coffee</Link> / <a href="#">Pages</a> / <Link to="/gallery" >Gallery</Link></p>
       </div>

@@ -51,10 +51,10 @@ body::-webkit-scrollbar-thumb {
 .btn {
     display: inline-block;
     padding: .9rem 1.5rem;
-    border-radius: var(--border-radius);
+    /* border-radius: var(--border-radius); */
     color: #FFFFFFff !important;
     background: var(--second-color);
-    font-family: cursive;
+    /* font-family: cursive; */
     cursor: pointer;
     margin: .9rem;
     font-size: 1.8rem;
@@ -63,12 +63,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn:hover {
-    border-radius: var(--border-radius-hover);
+    /* border-radius: var(--border-radius-hover); */
     background: var(--main-color);
 }
 
 .header {
-    position: fixed;
+    /* position: fixed; */
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
@@ -117,7 +118,7 @@ body::-webkit-scrollbar-thumb {
     background: white;
     display: none;
     border: var(--border);
-    border-radius: var(--border-radius);
+    /* border-radius: var(--border-radius); */
     padding: .8rem 0;
     transition: all 0.3 ease;
     transform: translateY(1rem);
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 
 .header .navbar ul li ul:hover {
     border: var(--border-hover);
-    border-radius: var(--border-radius-hover);
+    /* border-radius: var(--border-radius-hover); */
 }
 
 .header .navbar ul li ul li {
@@ -267,14 +268,19 @@ body::-webkit-scrollbar-thumb {
         font-size: 50%;
     }
 
-    .home .slide .content h3 {
-        font-size: 4rem;
+    .fa-shopping-cart {
+        display: none;
     }
 
-    .shopping-cart .box-container .box {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-        flex-flow: column;
+}
+@media (max-width: 360px) {
+    .icons > a > .join-btn{
+        display: none;
     }
+
+    .header{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
 }
