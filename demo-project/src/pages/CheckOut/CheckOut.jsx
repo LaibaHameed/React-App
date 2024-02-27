@@ -1,8 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './CheckOut.css'
+import { useParams } from 'react-router-dom';
 
 const CheckOut = () => {
+    // const { productId } = useParams();
+
   return (
     <>
       <div className="check-heading">

@@ -18,6 +18,7 @@ import CheckOut from './pages/CheckOut/CheckOut.jsx';
 import Account from './pages/Account/Account.jsx';
 import Login from './pages/Login/Login.jsx';
 import SignUp from './pages/SignUp/SignUp.jsx';
+import ProductDisplay from './pages/ProductDisplay/ProductDisplay.jsx';
 
 
 const router = createBrowserRouter([
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: 'products',
         element: <Products/>
+      },
+      {
+        path: 'product-display/:productId',
+        element: <ProductDisplay/>
       },
       {
         path: 'cart',
