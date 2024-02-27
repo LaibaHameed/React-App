@@ -87,7 +87,7 @@ useEffect(() => {
                 <li><a><Link to={'products'}>Products</Link></a></li>
                 <li><a><Link to={'cart'}>Cart</Link></a></li>
                 <li><a><Link to={'check-out'}>Check Out</Link></a></li>
-                <li><a><Link to={'account'}>My Account</Link></a></li>
+                {/* <li><a><Link to={'account'}>My Account</Link></a></li> */}
 
             </ul>
         </li>

@@ -15,9 +15,9 @@ const SignUp = () => {
         <div className="cols-2">
             <h2>Welcome!</h2>
             <span>Already have an Account? <Link to={'/login'}><a>Login</a></Link></span>
-            <a href="#" className="google-link">
+            <Link to={'/'}> <a href="#" className="google-link">
                 <img src={google} alt=""/>Continue with google
-            </a>
+            </a></Link>
             <h4>or</h4>
             <form onsubmit="SubmitUserDetails(); return false" className='signup-form'>
 

@@ -40,10 +40,7 @@ const ProductDisplay = () => {
                             <img src={product.image} />
                         </div>
                         <div className="side-imgs">
-                            <img src={product.image} />
-                            <img src={product.image} />
-                            <img src={product.image} />
-                            <img src={product.image} />
+                        {product.gallery.map((galleryImg)=>(<img src={galleryImg} />))}
                         </div>
                     </div>
                     <div className="column2">

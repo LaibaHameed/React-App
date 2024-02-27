@@ -13,32 +13,6 @@ const Cart = () => {
   const name = searchParams.get('name');
   const image = searchParams.get('img');
 
-  const [cartItems, setCartItems] = useState([]);
-
-  useEffect(() => {
-    const searchParams = new URLSearchParams(location.search);
-    const productId = searchParams.get('productId');
-    const quantity = searchParams.get('quantity');
-    const price = searchParams.get('price');
-    const Pname = searchParams.get('name');
-    const image = searchParams.get('img');
-
-    // Create a new item object
-    const newItem = {
-      productId: productId,
-      Pname: Pname,
-      price: parseFloat(price),
-      image: image,
-      quantity: parseInt(quantity),
-    };
-
-  
-
-    // Update cartItems state by adding the new item
-    setCartItems(prevCartItems => [...prevCartItems, newItem]);
-  }, [location.search]); 
-
-
   const [count, setCount] = useState(quantity);
 
   const increment = () => {
@@ -59,8 +33,7 @@ const Cart = () => {
         <p><Link to={"/"} >Coffee</Link> / <Link to={"/cart"} >Cart</Link></p>
       </div>
 
-      {cartItems.length === 0 ? (
-        <>
+        {/* <>
           <div class="empty">
             <p>Your cart is currently empty.</p>
           </div>
@@ -68,9 +41,8 @@ const Cart = () => {
           <div class="return">
             <Link to={"/products"} >Return to Shop</Link>
           </div>
-        </>
-      ) : (
-        <>
+        </> */}
+      
           <div class="cart-parent">
             <table cellpadding="0" cellspacing="0" >
               <thead>
@@ -134,8 +106,7 @@ const Cart = () => {
               <button class="btn">Proceed to checkout</button>
             </div>
           </div>
-        </>
-      )}
+
 
 
 
