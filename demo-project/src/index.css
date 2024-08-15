@@ -51,21 +51,27 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.btn {
-    display: inline-block;
-    padding: .9rem 1.5rem;
-    /* border-radius: var(--border-radius); */
-    color: #FFFFFFff;
-    background: var(--second-color);
-    /* font-family: cursive; */
-    cursor: pointer;
-    margin: .9rem;
-    font-size: 1.9rem;
-    font-weight: 420;
-    outline: none;
-}
+    .btn {
+        display: inline-block;
+        padding: 1rem 1.4rem;
+        color: #FFFFFFff;
+        background: var(--second-color);
+        cursor: pointer;
+        margin: .9rem;
+        font-size: 1.3rem;
+        font-weight: 420;
+        outline: none;
+    }
 
 .btn:hover {
     /* border-radius: var(--border-radius-hover); */
     background: var(--main-color);
+}
+
+@media(max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
 }
